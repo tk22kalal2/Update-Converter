@@ -52,37 +52,15 @@ HELP_REPLY_MARKUP = InlineKeyboardMarkup([
 ])
 
 
-ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([
-    [
-        InlineKeyboardButton('Home', callback_data=f'start_command'),
-        InlineKeyboardButton('Help', callback_data=f'help_command')
-    ],
-    [
-        InlineKeyboardButton('Close', callback_data='delete')
-    ]
-])
-
-START_MESSAGE_REPLY_MARKUP  = InlineKeyboardMarkup([
-    [
-        InlineKeyboardButton('Connect', url=f'https://{BASE_SITE}/member/tools/api'),
-        InlineKeyboardButton('Help', callback_data=f'help_command'),
-        
-    ],
-        [
-        InlineKeyboardButton('About', callback_data='about_command'),
-        InlineKeyboardButton('Close', callback_data='delete')
-    ],
+ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([[InlineKeyboardButton('Home', callback_data='start_command'), InlineKeyboardButton('Help', callback_data='help_command')], [InlineKeyboardButton('Close', callback_data='delete')]])
 
 
-])
+START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([[InlineKeyboardButton('Connect', url=f'https://{BASE_SITE}/member/tools/api'), InlineKeyboardButton('Help', callback_data='help_command')], [InlineKeyboardButton('About', callback_data='about_command'), InlineKeyboardButton('Close', callback_data='delete')]])
 
 
-BACK_REPLY_MARKUP = InlineKeyboardMarkup([
-    [
-        InlineKeyboardButton('Back', callback_data=f'start_command')
-    ],
 
-])
+BACK_REPLY_MARKUP = InlineKeyboardMarkup([[InlineKeyboardButton('Back', callback_data='start_command')]])
+
 
 USER_ABOUT_MESSAGE = """
 - Shortener Website: {base_site}
