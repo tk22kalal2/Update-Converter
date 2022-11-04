@@ -102,7 +102,7 @@ async def replace_link(user, text, x=""):
     for link in links:
 
         long_url = link
-        if "t.me" not in link:
+        if "t.me" not in link and not os.environ.get("SHORT_TME_LINKS", False):
             try:
                 short_link = await shortzy.convert(link, x)
                 text = text.replace(long_url, short_link)
