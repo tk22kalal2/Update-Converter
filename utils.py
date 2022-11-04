@@ -101,12 +101,18 @@ async def replace_link(user, text, x=""):
 
     for link in links:
         long_url = link
-        if "t.me" not in link and os.environ.get("SHORT_TME_LINKS", False):
-            try:
+        short_tme_links = os.environ.get("SHORT_TME_LINKS", False)
+        is_tme_link = "t.me" in link
+
+        try:
+            if is_tme_link and not short_tme_links:
+                pass
+            else:
                 short_link = await shortzy.convert(link, x)
                 text = text.replace(long_url, short_link)
-            except Exception as e:
-                logging.exception(f"Error converting link to short link: {e}")
+                
+        except Exception as e:
+            logging.exception(f"Error converting link to short link: {e}")
 
     return text
 
