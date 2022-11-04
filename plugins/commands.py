@@ -104,7 +104,7 @@ async def restart_handler(c: Client, m:Message):
     await m.reply("Are you sure you want to restart / re-deploy the server?", reply_markup=RESTARTE_MARKUP)
 
 
-@Client.on_message(filters.command('stats') & filters.private)
+@Client.on_message(filters.command('stats') & filters.private & filters.user(ADMINS))
 async def stats_handler(c: Client, m:Message):
     txt = await m.reply('`Fetching stats...`')
     size = await db.get_db_size()
@@ -199,18 +199,18 @@ async def username_handler(bot, m: Message):
     if len(cmd) == 1:
         username = user["username"] if user["username"] else None
         return await m.reply(USERNAME_TEXT.format(username=username))
-    elif len(cmd) == 2:    
+    elif len(cmd) == 2:
         if "remove" in cmd:
             await update_user_info(user_id, {"username": ""})
             return await m.reply("Username Successfully Removed")
         elif "none" in cmd:
             await update_user_info(user_id, {"username": "none"})
             return await m.reply("Username Successfully Updated")
-            
+
         else:
             username = cmd[1].strip().replace("@", "")
             await update_user_info(user_id, {"username": username})
-            await m.reply("Username updated successfully to " + username)
+            await m.reply(f"Username updated successfully to {username}")
 
 @Client.on_message(filters.command('banner_image') & filters.private)
 async def banner_image_handler(bot, m: Message):
