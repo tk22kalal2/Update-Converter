@@ -96,18 +96,18 @@ async def replace_link(user, text, x=""):
     base_site = BASE_SITE
 
     shortzy = Shortzy(api_key, base_site)
-    
+
     links = await extract_link(text)
 
     for link in links:
 
         long_url = link
-        # Include domain validation 
-        try:
-            short_link = await shortzy.convert(link, x)
-            text = text.replace(long_url, short_link)
-        except Exception as e:
-            logging.exception("Error converting link to short link: %s" % e)
+        if "t.me" not in link:
+            try:
+                short_link = await shortzy.convert(link, x)
+                text = text.replace(long_url, short_link)
+            except Exception as e:
+                logging.exception(f"Error converting link to short link: {e}")
 
     return text
 
