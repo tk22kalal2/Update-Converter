@@ -1,7 +1,7 @@
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 from config import BASE_SITE
 
-START_MESSAGE = '''Hello, {}
+START_MESSAGE = '''😎Hello, {}
 
 I'm a Bot to Short Other Links to %s Links by Using your API. 
 
