@@ -39,7 +39,7 @@ ABOUT_TEXT = """
     
 `📝 Language:` [Python 3](https://www.python.org/)
 `🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
-`👨‍💻 Developer:` [Dev](t.me/ask_admin001)
+`👨‍💻 Developer:` [Dev](t.me/idblant)
 `📢 Support:` {}
 """
 
