@@ -52,7 +52,7 @@ async def on_callback_query(bot:Client, query:CallbackQuery):
             await query.message.edit(HELP_MESSAGE.format(
                 firstname=temp.FIRST_NAME,
                 username=temp.BOT_USERNAME,
-                owner="@ask_admin001" ) + cmds, reply_markup=HELP_REPLY_MARKUP, disable_web_page_preview=True)
+                owner="@idblant" ) + cmds, reply_markup=HELP_REPLY_MARKUP, disable_web_page_preview=True)
         except Exception as e:
             logging.exception(e)
 
