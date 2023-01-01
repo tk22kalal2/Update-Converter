@@ -45,7 +45,7 @@ async def help_command(c, m: Message):
     s = HELP_MESSAGE.format(
                 firstname=temp.FIRST_NAME,
                 username=temp.BOT_USERNAME,
-                owner="@ask_admin001" )+ cmds
+                owner="@idblant" )+ cmds
 
     if WELCOME_IMAGE:
         return await m.reply_photo(photo=WELCOME_IMAGE, caption=s)
