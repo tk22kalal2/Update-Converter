@@ -15,7 +15,7 @@ BOT_TOKEN = os.environ.get("BOT_TOKEN", '5415197525:AAEQrJwwFBA8O8D6lpytZg4FEyr4
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split(",")] if os.environ.get("ADMINS") else []
 OWNER_ID = int(os.environ.get("OWNER_ID", "1252654109"))
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "Shortener")
-DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://gyanilinks:0EhFbx8Iuu8fpcdz@cluster0.q1lfcho.mongodb.net/?retryWrites=true&w=majority")
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://gyanilinks:a3XXfP7wbveJfvza@cluster0.q1lfcho.mongodb.net/?retryWrites=true&w=majority")
 # Optionnal variables
 BROADCAST_AS_COPY = is_enabled((os.environ.get('BROADCAST_AS_COPY', "False")), False)
 WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", '')
