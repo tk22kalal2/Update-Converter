@@ -3,11 +3,11 @@ from config import BASE_SITE
 
 START_MESSAGE = '''😎**Hello, {}
 
-I Am %s , Bulk Link Converter Bot. I Can Convert Links Directly From Your gyanilinks.com Account,
+I Am %s , Bulk Link Converter Bot. I Can Convert Links Directly From Your mdisky.com Account,
 
 Just Send me Any Post with Other Links. I will Convert Those Links Using Your API and Send them Back To You
 
-1. Go To 👉 https://gyanilinks.com/member/tools/api
+1. Go To 👉 https://mdisky.com/member/tools/api
 
 2. Than Copy API Key
 
