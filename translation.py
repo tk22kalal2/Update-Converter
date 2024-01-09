@@ -21,6 +21,8 @@ Example: `/shortener_api cbd63775f798fe0e58c67a56e6ce8b70c495cda4`
 ➕ Hit 👉 /footer To Get Help About Adding your Custom Footer to bot.
 
 ➕ Hit 👉 /header To Get Help About Adding your Custom Footer to bot.**
+
+If You Want Any **Other Shortner** Link Converter Bot Instead Of zxlink.in than **contact** at 👉 @J_shree_ram (all **shortners** support available.)
 ''' % BASE_SITE
 
 HELP_MESSAGE = '''
@@ -39,7 +41,7 @@ Helpful commands:
 - /start: Starts me! You've probably already used this.
 - /help: Sends this message; I'll tell you more about myself!
 
-If you have any bugs or questions on how to use me, contact to {owner}.
+If you have any bugs or questions on how to use me, contact to @J_shree_ram.
 
 Below are some features I provide'''
 
