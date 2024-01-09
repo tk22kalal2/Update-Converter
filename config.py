@@ -18,7 +18,7 @@ DATABASE_NAME = os.environ.get("DATABASE_NAME", "zxlink")
 DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://SawanSingh:sawansingh@cluster0.h2prshr.mongodb.net/?retryWrites=true&w=majority")
 # Optionnal variables
 BROADCAST_AS_COPY = is_enabled((os.environ.get('BROADCAST_AS_COPY', "False")), False)
-WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", '')
+WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", 'https://telegra.ph/file/99d583cff0b18c2470c03.jpg')
 BIN_CHANNEL = os.environ.get("BIN_CHANNEL", -1001765670990)
 #  Replit Config
 REPLIT_USERNAME = os.environ.get("REPLIT_USERNAME", None)
