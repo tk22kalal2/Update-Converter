@@ -3,11 +3,11 @@ from config import BASE_SITE
 
 START_MESSAGE = '''😎**Hello, {}
 
-I Am %s , Bulk Link Converter Bot. I Can Convert Links Directly From Your mdisky.com Account,
+I Am %s , Bulk Link Converter Bot. I Can Convert Links Directly From Your zxlink.in Account,
 
 Just Send me Any Post with Other Links. I will Convert Those Links Using Your API and Send them Back To You
 
-1. Go To 👉 https://mdisky.com/member/tools/api
+1. Go To 👉 https://zxlink.in/member/tools/api
 
 2. Than Copy API Key
 
@@ -51,7 +51,7 @@ ABOUT_TEXT = """
     
 `📝 Language:` [Python 3](https://www.python.org/)
 `🧰 Framework:` [Pyrogram](https://github.com/pyrogram/pyrogram)
-`👨‍💻 Developer:` [Dev](t.me/idblant)
+`👨‍💻 Developer:` [Dev](t.me/J_shree_ram)
 `📢 Support:` {}
 """
 
