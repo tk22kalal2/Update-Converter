@@ -69,7 +69,7 @@ HELP_REPLY_MARKUP = InlineKeyboardMarkup([
 ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([[InlineKeyboardButton('Home', callback_data='start_command'), InlineKeyboardButton('Help', callback_data='help_command')], [InlineKeyboardButton('Close', callback_data='delete')]])
 
 
-START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([[InlineKeyboardButton('↗️Connect', url=f'https://{BASE_SITE}/member/tools/api'), InlineKeyboardButton('⚙️Help', callback_data='help_command')], [InlineKeyboardButton('🧑‍💻About', callback_data='about_command'), InlineKeyboardButton('❌Close', callback_data='delete')]])
+START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([[InlineKeyboardButton('↗️Connect', url=f'https://{BASE_SITE}/member/tools/api')]])
 
 
 
