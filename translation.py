@@ -3,11 +3,11 @@ from config import BASE_SITE
 
 START_MESSAGE = '''😎**Hello, {}
 
-I Am %s , Bulk Link Converter Bot. I Can Convert Links Directly From Your zxlink.in Account,
+I Am %s , Bulk Link Converter Bot. I Can Convert Links Directly From Your krishnalink.com Account,
 
 Just Send me Any Post with Other Links. I will Convert Those Links Using Your API and Send them Back To You
 
-1. Go To 👉 https://zxlink.in/member/tools/api
+1. Go To 👉 https://krishnalink.com/member/tools/api
 
 2. Than Copy API Key
 
@@ -22,7 +22,7 @@ Example: `/shortener_api cbd63775f798fe0e58c67a56e6ce8b70c495cda4`
 
 ➕ Hit 👉 /header To Get Help About Adding your Custom Footer to bot.**
 
-If You Want Any **Other Shortner** Link Converter Bot Instead Of zxlink.in than **contact** at 👉 @J_shree_ram (all **shortners** support available.)
+If You Want Any **Other Shortner** Link Converter Bot Instead Of krishnalink.com than **contact** at 👉 @J_shree_ram (all **shortners** support available.)
 ''' % BASE_SITE
 
 HELP_MESSAGE = '''
@@ -69,7 +69,7 @@ HELP_REPLY_MARKUP = InlineKeyboardMarkup([
 ABOUT_REPLY_MARKUP = InlineKeyboardMarkup([[InlineKeyboardButton('Home', callback_data='start_command'), InlineKeyboardButton('Help', callback_data='help_command')], [InlineKeyboardButton('Close', callback_data='delete')]])
 
 
-START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([[InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛ ᴢxʟɪɴᴋ ᴀᴘɪ ↗️', url=f'https://{BASE_SITE}/member/tools/api')]])
+START_MESSAGE_REPLY_MARKUP = InlineKeyboardMarkup([[InlineKeyboardButton('ᴄᴏɴɴᴇᴄᴛ ᴋʀɪꜱʜɴᴀʟɪɴᴋ ᴀᴘɪ ↗️', url=f'https://{BASE_SITE}/member/tools/api')]])
 
 
 
