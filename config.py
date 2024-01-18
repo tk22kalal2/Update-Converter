@@ -17,7 +17,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "5651594253"))
 DATABASE_NAME = os.environ.get("DATABASE_NAME", "omnifly")
 DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://SawanSingh:sawansingh@cluster0.h2prshr.mongodb.net/?retryWrites=true&w=majority")
 # Optionnal variables
-BROADCAST_AS_COPY = is_enabled((os.environ.get('BROADCAST_AS_COPY', "False")), False)
+BROADCAST_AS_COPY = is_enabled((os.environ.get('BROADCAST_AS_COPY', "True")), True)
 WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", '')
 BIN_CHANNEL = os.environ.get("BIN_CHANNEL", -1001765670990)
 #  Replit Config
