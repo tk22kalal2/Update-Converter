@@ -11,15 +11,15 @@ def is_enabled(value, default):
 # Mandatory variables for the bot to start
 API_ID = int(os.environ.get("API_ID", 21748181))
 API_HASH = os.environ.get("API_HASH", 'b1d962414e186e0778911f3183feac33')
-BOT_TOKEN = os.environ.get("BOT_TOKEN", '6806119336:AAHPgsNAm6muevQanFDVxqKRQ-JFHlsrx5c')
+BOT_TOKEN = os.environ.get("BOT_TOKEN", '6252680693:AAG0_xI-OHQI-PIzt67Y42DkrwdvrMgQbHc')
 ADMINS = [int(i.strip()) for i in os.environ.get("ADMINS").split(",")] if os.environ.get("ADMINS") else []
-OWNER_ID = int(os.environ.get("OWNER_ID", "5651594253"))
-DATABASE_NAME = os.environ.get("DATABASE_NAME", "zxlink")
-DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://SawanSingh:sawansingh@cluster0.h2prshr.mongodb.net/?retryWrites=true&w=majority")
+OWNER_ID = int(os.environ.get("OWNER_ID", "1608576332"))
+DATABASE_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
+DATABASE_URL = os.environ.get("DATABASE_URL", "mongodb+srv://kemece1936:UnOYz34kMryb9t9l@cluster0.dtrmopb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 # Optionnal variables
 BROADCAST_AS_COPY = is_enabled((os.environ.get('BROADCAST_AS_COPY', "False")), False)
 WELCOME_IMAGE = os.environ.get("WELCOME_IMAGE", '')
-BIN_CHANNEL = os.environ.get("BIN_CHANNEL", -1001765670990)
+BIN_CHANNEL = os.environ.get("BIN_CHANNEL", -1001863980889)
 #  Replit Config
 REPLIT_USERNAME = os.environ.get("REPLIT_USERNAME", None)
 REPLIT_APP_NAME = os.environ.get("REPLIT_APP_NAME", None)
